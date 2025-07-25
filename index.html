@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeeparkPOS - Sistem POS F&B Mampu Milik & Terbaik</title>
-    <meta name="description" content="LeeparkPOS menawarkan sistem POS yang berpatutan dan perkhidmatan terbaik untuk perniagaan F&B di seluruh Malaysia. Hubungi kami untuk penyelesaian POS anda!">
+    <title>Spintech Solution - Sistem POS untuk F&B dan Runcit</title>
+    <meta name="description" content="Spintech Solution menawarkan sistem POS All-in-One yang mesra pengguna untuk perniagaan F&B dan runcit di seluruh Malaysia. Hubungi kami untuk penyelesaian terbaik!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,9 +12,9 @@
     <style>
         /* === RESET & GLOBAL STYLES === */
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
+            --primary-color: #2c3e50; /* Dark Greyish Blue */
+            --secondary-color: #e74c3c; /* Bright Red from Spintech Logo */
+            --accent-color: #c0392b; /* Darker Red for hover */
             --light-gray: #f4f4f4;
             --dark-gray: #333;
             --text-color: #555;
@@ -72,7 +72,7 @@
         }
 
         .btn:hover {
-            background-color: #2980b9;
+            background-color: var(--accent-color);
             transform: translateY(-2px);
         }
         
@@ -107,6 +107,9 @@
             font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
+        }
+        .logo span {
+            color: var(--secondary-color);
         }
 
         .nav-links {
@@ -149,7 +152,7 @@
 
         /* === HERO SECTION === */
         .hero {
-            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2574&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2574&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             height: 90vh;
@@ -300,6 +303,7 @@
             color: var(--primary-color);
             margin-bottom: 2rem;
             display: block;
+            text-decoration: none;
         }
 
         /* === FOOTER === */
@@ -363,7 +367,7 @@
 
     <header class="main-header">
         <nav class="container main-nav">
-            <a href="#" class="logo">LeeparkPOS</a>
+            <a href="#" class="logo">Spin<span>tech</span></a>
             <ul class="nav-links">
                 <li><a href="#tentang-kami">Tentang Kami</a></li>
                 <li><a href="#pakej">Pakej</a></li>
@@ -376,8 +380,8 @@
     <main>
         <section class="hero">
             <div class="container hero-content">
-                <h1>Sistem POS Mampu Milik untuk Perniagaan F&B Anda</h1>
-                <p>Servis pantas dan terbaik di seluruh Malaysia. Kami sedia membantu perniagaan anda berkembang dengan teknologi POS terkini.</p>
+                <h1>Sistem POS "All-in-One" untuk Perniagaan Anda</h1>
+                <p>Menyediakan solusi POS yang mesra pengguna untuk perniagaan F&B dan Runcit di seluruh Malaysia. Servis terbaik, harga mampu milik.</p>
                 <a href="#pakej" class="btn">Lihat Pakej Kami</a>
             </div>
         </section>
@@ -385,8 +389,8 @@
         <section id="tentang-kami">
             <div class="container">
                 <div class="section-title">
-                    <h2>Mengenai LeeparkPOS</h2>
-                    <p>Ditubuhkan oleh tiga sahabat dengan misi untuk menyediakan solusi IT yang berkesan dan mampu milik untuk industri F&B.</p>
+                    <h2>Mengenai Spintech Solution</h2>
+                    <p>Kami adalah pasukan yang komited untuk membantu memajukan perniagaan tempatan dengan teknologi POS yang cekap dan boleh dipercayai.</p>
                 </div>
                 
                 <div class="team-grid">
@@ -394,21 +398,21 @@
                         <img src="Afiq.jpg" alt="Gambar Afiq">
                         <h3>Afiq</h3>
                         <p class="role">CEO (Ketua Pegawai Eksekutif)</p>
-                        <p class="bio">Dengan latar belakang dari industri minyak dan gas, Afiq kini menerajui visi syarikat, memastikan LeeparkPOS sentiasa memberikan yang terbaik kepada pelanggan.</p>
+                        <p class="bio">Dengan latar belakang dari industri minyak dan gas, Afiq kini menerajui visi Spintech, memastikan syarikat sentiasa memberikan yang terbaik kepada pelanggan.</p>
                     </div>
 
                     <div class="team-card fade-in">
                         <img src="Fred.jpg" alt="Gambar Fred">
                         <h3>Fred</h3>
                         <p class="role">COO (Ketua Pegawai Operasi)</p>
-                        <p class="bio">Berbekalkan pengalaman lebih 15 tahun dalam bidang jualan, Fred pakar dalam memahami keperluan pelanggan dan memastikan operasi syarikat berjalan lancar.</p>
+                        <p class="bio">Berbekalkan pengalaman lebih 15 tahun dalam bidang jualan, Fred pakar dalam memahami keperluan unik setiap perniagaan dan memastikan operasi berjalan lancar.</p>
                     </div>
 
                     <div class="team-card fade-in">
                         <img src="Amer.jpg" alt="Gambar Amer">
                         <h3>Amer</h3>
                         <p class="role">CTO (Ketua Pegawai Teknologi)</p>
-                        <p class="bio">Juga dari industri minyak dan gas, Amer terjun ke bidang teknikal POS untuk membangunkan solusi yang stabil, efisien dan mudah digunakan oleh semua.</p>
+                        <p class="bio">Juga dari industri minyak dan gas, Amer kini mengetuai bahagian teknikal untuk membangunkan solusi POS yang stabil, efisien dan mudah digunakan oleh semua.</p>
                     </div>
                 </div>
             </div>
@@ -416,140 +420,4 @@
 
         <section id="pakej">
             <div class="container">
-                <div class="section-title">
-                    <h2>Pakej POS Kami</h2>
-                    <p>Kami menawarkan pakej yang fleksibel mengikut saiz dan keperluan perniagaan anda.</p>
-                </div>
-
-                <div class="packages-grid">
-                    <div class="package-card fade-in">
-                        <div class="package-header">
-                            <h3>Pakej Asas</h3>
-                            <p class="price">RM1,899</p>
-                            <p>Sesuai untuk kafe kecil, gerai & trak makanan.</p>
-                        </div>
-                        <div class="package-features">
-                            <ul>
-                                <li>Tablet Android 10"</li>
-                                <li>Perisian POS Asas</li>
-                                <li>Printer Resit Terma</li>
-                                <li>Laci Tunai (Cash Drawer)</li>
-                                <li>Latihan & Pemasangan</li>
-                            </ul>
-                        </div>
-                        <div class="package-footer">
-                            <a href="https://wa.me/601154157902?text=Hai%20LeeparkPOS,%20saya%20berminat%20dengan%20Pakej%20Asas." class="btn" target="_blank">Pilih Pakej Ini</a>
-                        </div>
-                    </div>
-
-                    <div class="package-card fade-in">
-                        <div class="package-header standard">
-                            <h3>Pakej Standard</h3>
-                            <p class="price">RM3,299</p>
-                            <p>Pilihan popular untuk restoran & kafe.</p>
-                        </div>
-                        <div class="package-features">
-                            <ul>
-                                <li>Terminal Skrin Sentuh 15"</li>
-                                <li>Perisian POS Penuh</li>
-                                <li>Printer Resit Terma</li>
-                                <li>Printer Dapur (Kitchen Printer)</li>
-                                <li>Laci Tunai (Cash Drawer)</li>
-                                <li>Pengurusan Inventori & Meja</li>
-                                <li>Latihan & Pemasangan Penuh</li>
-                            </ul>
-                        </div>
-                        <div class="package-footer">
-                             <a href="https://wa.me/601154157902?text=Hai%20LeeparkPOS,%20saya%20berminat%20dengan%20Pakej%20Standard." class="btn btn-whatsapp" target="_blank">Pilih Pakej Ini</a>
-                        </div>
-                    </div>
-
-                    <div class="package-card fade-in">
-                        <div class="package-header">
-                            <h3>Pakej Enterprise</h3>
-                            <p class="price">Hubungi Kami</p>
-                            <p>Untuk operasi besar, berbilang cawangan.</p>
-                        </div>
-                        <div class="package-features">
-                            <ul>
-                                <li>Terminal Berbilang</li>
-                                <li>Sistem Paparan Dapur (KDS)</li>
-                                <li>Server & Rangkaian Khas</li>
-                                <li>Analitik & Laporan Lanjutan</li>
-                                <li>Sokongan Premium 24/7</li>
-                                <li>Integrasi Khas</li>
-                            </ul>
-                        </div>
-                        <div class="package-footer">
-                             <a href="https://wa.me/601154157902?text=Hai%20LeeparkPOS,%20saya%20berminat%20untuk%20mengetahui%20tentang%20Pakej%20Enterprise." class="btn" target="_blank">Dapatkan Sebut Harga</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="hubungi">
-            <div class="container contact-content">
-                <h2>Sedia Untuk Mula?</h2>
-                <p>Hubungi pasukan jualan kami hari ini untuk konsultasi percuma. Kami sedia membantu anda tidak kira di mana jua anda berada - di timur, selatan, barat, atau utara!</p>
-                <a href="tel:+601154157902" class="contact-number">+60 11-5415 7902</a>
-                <a href="https://wa.me/601154157902?text=Hai%20LeeparkPOS,%20saya%20ingin%20bertanya%20mengenai%20sistem%20POS%20anda." class="btn btn-whatsapp" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 8px;">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg>
-                    WhatsApp Kami Sekarang
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 LeeparkPOS. Semua Hak Cipta Terpelihara.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-            
-            // Close mobile menu when a link is clicked
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('active')) {
-                        navLinks.classList.remove('active');
-                    }
-                });
-            });
-
-            // Fade-in animation on scroll
-            const faders = document.querySelectorAll('.fade-in');
-            const appearOptions = {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px"
-            };
-
-            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        return;
-                    } else {
-                        entry.target.classList.add('is-visible');
-                        appearOnScroll.unobserve(entry.target);
-                    }
-                });
-            }, appearOptions);
-
-            faders.forEach(fader => {
-                appearOnScroll.observe(fader);
-            });
-        });
-    </script>
-</body>
-</html>
+                <div class="section-
