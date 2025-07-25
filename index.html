@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spintech Solution - Sistem POS untuk F&B dan Runcit</title>
-    <meta name="description" content="Spintech Solution menawarkan sistem POS All-in-One yang mesra pengguna untuk perniagaan F&B dan runcit di seluruh Malaysia. Hubungi kami untuk penyelesaian terbaik!">
+    <title>SPINTECH - Sistem POS Moden untuk Perniagaan Anda</title>
+    <meta name="description" content="SPINTECH menawarkan sistem POS All-in-One yang mesra pengguna untuk perniagaan F&B dan runcit di seluruh Malaysia. Hubungi kami untuk penyelesaian terbaik!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-        /* === RESET & GLOBAL STYLES === */
+        /* === NEW THEME & GLOBAL STYLES === */
         :root {
-            --primary-color: #2c3e50; /* Dark Greyish Blue */
-            --secondary-color: #e74c3c; /* Bright Red from Spintech Logo */
-            --accent-color: #c0392b; /* Darker Red for hover */
-            --light-gray: #f4f4f4;
+            --primary-color: #0A2342; /* Dark Navy Blue from Logo */
+            --secondary-color: #2CA5B5; /* Light Blue from Logo */
+            --accent-color: #008E9B; /* Darker Light Blue for hover */
+            --light-bg: #f8f9fa;
             --dark-gray: #333;
             --text-color: #555;
             --white: #ffffff;
+            --facebook-blue: #1877F2;
         }
 
         * {
@@ -56,7 +59,7 @@
         }
         
         section:nth-child(even) {
-            background-color: var(--light-gray);
+            background-color: var(--light-bg);
         }
 
         .btn {
@@ -65,10 +68,11 @@
             background-color: var(--secondary-color);
             color: var(--white);
             border: none;
-            border-radius: 5px;
+            border-radius: 50px; /* Rounded buttons */
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0.5rem;
         }
 
         .btn:hover {
@@ -83,6 +87,15 @@
         .btn-whatsapp:hover {
             background-color: #1DAA50;
         }
+        
+        .btn-facebook {
+            background-color: var(--facebook-blue);
+        }
+        
+        .btn-facebook:hover {
+            background-color: #166fe5;
+        }
+
 
         /* === HEADER & NAVIGATION === */
         .main-header {
@@ -102,13 +115,11 @@
         }
         
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
-        }
-        .logo span {
-            color: var(--secondary-color);
+            letter-spacing: 1px;
         }
 
         .nav-links {
@@ -132,7 +143,8 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 2px;
             background-color: var(--secondary-color);
@@ -151,7 +163,7 @@
 
         /* === HERO SECTION === */
         .hero {
-            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2574&auto=format&fit=crop');
+            background: linear-gradient(to right, #0a2342, #0e3a65); /* Gradient background */
             background-size: cover;
             background-position: center;
             height: 90vh;
@@ -170,6 +182,7 @@
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto 2rem;
+            color: rgba(255,255,255,0.9);
         }
 
         /* === TENTANG KAMI SECTION === */
@@ -177,7 +190,7 @@
             text-align: center;
             margin-bottom: 3rem;
         }
-
+        
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -188,7 +201,7 @@
         .team-card {
             background: var(--white);
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             text-align: center;
             padding: 2rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -196,7 +209,7 @@
         
         .team-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
         
         .team-card img {
@@ -250,13 +263,13 @@
             border-bottom: 1px solid #ddd;
         }
         
-        .package-header.standard { background-color: var(--secondary-color); color: var(--white); }
+        .package-header.standard { background-color: var(--primary-color); color: var(--white); }
         .package-header.standard h3, .package-header.standard .price { color: var(--white); }
         
         .price {
             font-size: 2rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--secondary-color);
             margin: 0.5rem 0;
         }
         
@@ -287,20 +300,95 @@
             text-align: center;
         }
 
+        /* === TESTIMONIALS SECTION === */
+        #testimonials {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        #testimonials h2, #testimonials p {
+            color: var(--white);
+        }
+        
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .testimonial-slide {
+            display: none;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(255,255,255, 0.1);
+        }
+
+        .testimonial-slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            padding: 0 1rem;
+        }
+        
+        .slider-nav button {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+        
+        .slider-nav button:hover {
+            background: rgba(255,255,255,0.4);
+        }
+
+
         /* === HUBUNGI KAMI SECTION === */
         .contact-content {
             text-align: center;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        .contact-content h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-content p {
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
+        .contact-buttons-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
         }
         
         .contact-number {
@@ -317,21 +405,28 @@
             background-color: var(--primary-color);
             color: var(--white);
             text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* === UTILITIES & ANIMATIONS === */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .fade-in.is-visible {
-            opacity: 1;
-            transform: translateY(0);
+            padding: 3rem 0;
         }
         
+        .footer-socials a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 0.75rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-socials a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .footer-copyright {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+
         /* === RESPONSIVE DESIGN === */
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
@@ -360,12 +455,13 @@
             .nav-links a {
                 display: block;
                 padding: 1rem;
-                border-bottom: 1px solid var(--light-gray);
+                border-bottom: 1px solid var(--light-bg);
             }
             
             .hamburger {
                 display: block;
             }
+            .slider-nav { display: none; } /* Hide nav buttons on mobile for cleaner look, auto-slide still works */
         }
     </style>
 </head>
@@ -374,10 +470,11 @@
     <!-- Header & Navigation -->
     <header class="main-header">
         <nav class="container main-nav">
-            <a href="#" class="logo">Spin<span>tech</span></a>
+            <a href="#" class="logo">SPINTECH</a>
             <ul class="nav-links">
                 <li><a href="#tentang-kami">Tentang Kami</a></li>
                 <li><a href="#pakej">Pakej</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#hubungi">Hubungi</a></li>
             </ul>
             <div class="hamburger">☰</div>
@@ -388,9 +485,9 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-content">
-                <h1>Sistem POS "All-in-One" untuk Perniagaan Anda</h1>
-                <p>Menyediakan solusi POS yang mesra pengguna untuk perniagaan F&B dan Runcit di seluruh Malaysia. Servis terbaik, harga mampu milik.</p>
-                <a href="#pakej" class="btn">Lihat Pakej Kami</a>
+                <h1>Sistem POS Moden untuk Perniagaan Anda</h1>
+                <p>Menyediakan solusi POS "All-in-One" yang mesra pengguna untuk perniagaan F&B dan Runcit di seluruh Malaysia.</p>
+                <a href="#pakej" class="btn">Terokai Pakej Kami</a>
             </div>
         </section>
 
@@ -398,30 +495,25 @@
         <section id="tentang-kami">
             <div class="container">
                 <div class="section-title">
-                    <h2>Mengenai Spintech Solution</h2>
+                    <h2>Mengenai SPINTECH</h2>
                     <p>Kami adalah pasukan yang komited untuk membantu memajukan perniagaan tempatan dengan teknologi POS yang cekap dan boleh dipercayai.</p>
                 </div>
                 
                 <div class="team-grid">
-                    <!-- Afiq Card -->
-                    <div class="team-card fade-in">
-                        <img src="Afiq.jpg" alt="Gambar Afiq" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e74c3c/ffffff?text=Afiq';">
+                    <div class="team-card">
+                        <img src="Afiq.jpg" alt="Gambar Afiq" onerror="this.onerror=null;this.src='https://placehold.co/150x150/2CA5B5/ffffff?text=Afiq';">
                         <h3>Afiq</h3>
                         <p class="role">CEO (Ketua Pegawai Eksekutif)</p>
                         <p class="bio">Dengan latar belakang dari industri minyak dan gas, Afiq kini menerajui visi Spintech, memastikan syarikat sentiasa memberikan yang terbaik kepada pelanggan.</p>
                     </div>
-
-                    <!-- Fred Card -->
-                    <div class="team-card fade-in">
-                        <img src="Fred.jpg" alt="Gambar Fred" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e74c3c/ffffff?text=Fred';">
+                    <div class="team-card">
+                        <img src="Fred.jpg" alt="Gambar Fred" onerror="this.onerror=null;this.src='https://placehold.co/150x150/2CA5B5/ffffff?text=Fred';">
                         <h3>Fred</h3>
                         <p class="role">COO (Ketua Pegawai Operasi)</p>
                         <p class="bio">Berbekalkan pengalaman lebih 15 tahun dalam bidang jualan, Fred pakar dalam memahami keperluan unik setiap perniagaan dan memastikan operasi berjalan lancar.</p>
                     </div>
-
-                    <!-- Amer Card -->
-                    <div class="team-card fade-in">
-                        <img src="Amer.jpg" alt="Gambar Amer" onerror="this.onerror=null;this.src='https://placehold.co/150x150/e74c3c/ffffff?text=Amer';">
+                    <div class="team-card">
+                        <img src="Amer.jpg" alt="Gambar Amer" onerror="this.onerror=null;this.src='https://placehold.co/150x150/2CA5B5/ffffff?text=Amer';">
                         <h3>Amer</h3>
                         <p class="role">CTO (Ketua Pegawai Teknologi)</p>
                         <p class="bio">Juga dari industri minyak dan gas, Amer kini mengetuai bahagian teknikal untuk membangunkan solusi POS yang stabil, efisien dan mudah digunakan oleh semua.</p>
@@ -435,12 +527,11 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Pakej POS Kami</h2>
-                    <p>Kami menawarkan pakej yang fleksibel untuk perniagaan F&B dan Runcit.</p>
+                    <p>Pakej fleksibel yang direka untuk perniagaan F&B dan Runcit.</p>
                 </div>
 
                 <div class="packages-grid">
-                    <!-- Pakej Runcit -->
-                    <div class="package-card fade-in">
+                    <div class="package-card">
                         <div class="package-header">
                             <h3>Pakej Runcit</h3>
                             <p class="price">Dari RM1,999</p>
@@ -450,19 +541,17 @@
                             <ul>
                                 <li>Terminal Skrin Sentuh</li>
                                 <li>Perisian POS Runcit</li>
-                                <li>Pengimbas Kod Bar (Barcode Scanner)</li>
+                                <li>Pengimbas Kod Bar</li>
                                 <li>Printer Resit Terma</li>
-                                <li>Laci Tunai (Cash Drawer)</li>
+                                <li>Laci Tunai</li>
                                 <li>Pengurusan Stok & Inventori</li>
                             </ul>
                         </div>
                         <div class="package-footer">
-                            <a href="https://wa.me/60168806979?text=Hai%20Spintech%20Solution,%20saya%20berminat%20dengan%20Pakej%20Runcit." class="btn" target="_blank">Pilih Pakej Ini</a>
+                            <a href="https://wa.me/601154157902?text=Hai%20SPINTECH,%20saya%20berminat%20dengan%20Pakej%20Runcit." class="btn" target="_blank">Pilih Pakej Ini</a>
                         </div>
                     </div>
-
-                    <!-- Pakej F&B -->
-                    <div class="package-card fade-in">
+                    <div class="package-card">
                         <div class="package-header standard">
                             <h3>Pakej F&B</h3>
                             <p class="price">Dari RM2,599</p>
@@ -472,19 +561,17 @@
                             <ul>
                                 <li>Terminal Skrin Sentuh 15"</li>
                                 <li>Perisian POS F&B Penuh</li>
-                                <li>Printer Dapur (Kitchen Printer)</li>
+                                <li>Printer Dapur</li>
                                 <li>Printer Resit Terma</li>
-                                <li>Laci Tunai (Cash Drawer)</li>
+                                <li>Laci Tunai</li>
                                 <li>Pengurusan Pesanan & Meja</li>
                             </ul>
                         </div>
                         <div class="package-footer">
-                             <a href="https://wa.me/60168806979?text=Hai%20Spintech%20Solution,%20saya%20berminat%20dengan%20Pakej%20F%26B." class="btn" target="_blank">Pilih Pakej Ini</a>
+                             <a href="https://wa.me/601154157902?text=Hai%20SPINTECH,%20saya%20berminat%20dengan%20Pakej%20F%26B." class="btn" target="_blank">Pilih Pakej Ini</a>
                         </div>
                     </div>
-
-                    <!-- Pakej Premium -->
-                    <div class="package-card fade-in">
+                    <div class="package-card">
                         <div class="package-header">
                             <h3>Pakej Premium</h3>
                             <p class="price">Hubungi Kami</p>
@@ -501,8 +588,37 @@
                             </ul>
                         </div>
                         <div class="package-footer">
-                             <a href="https://wa.me/60168806979?text=Hai%20Spintech%20Solution,%20saya%20berminat%20untuk%20mengetahui%20tentang%20Pakej%20Premium." class="btn" target="_blank">Dapatkan Sebut Harga</a>
+                             <a href="https://wa.me/601154157902?text=Hai%20SPINTECH,%20saya%20berminat%20untuk%20mengetahui%20tentang%20Pakej%20Premium." class="btn" target="_blank">Dapatkan Sebut Harga</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Apa Kata Pelanggan Kami?</h2>
+                    <p>Kejayaan mereka adalah keutamaan kami.</p>
+                </div>
+                <div class="slider-container">
+                    <div class="testimonial-slide active">
+                        <p class="testimonial-text">"Servis memang terbaik dan sangat senang berurusan. Pasukan Spintech sangat profesional dari awal sampai akhir. Sistem POS mereka memudahkan operasi harian kafe kami."</p>
+                        <p class="testimonial-author">- Pemilik Kafe, Kuala Lumpur</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"Khidmat pelanggan yang sangat mesra dan cekap. Setiap soalan saya dijawab dengan pantas. Sistem yang dibekalkan sangat berkualiti dan mesra pengguna. Amat disyorkan!"</p>
+                        <p class="testimonial-author">- Pengurus Kedai Runcit, Johor Bahru</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"Puas hati dengan servis pemasangan. Sangat teliti dan kemas. Latihan yang diberikan juga jelas dan mudah difahami oleh semua staf. Kami pasti akan cadangkan Spintech!"</p>
+                        <p class="testimonial-author">- Pengusaha Restoran, Pulau Pinang</p>
+                    </div>
+                    
+                    <div class="slider-nav">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
                     </div>
                 </div>
             </div>
@@ -511,15 +627,17 @@
         <!-- Hubungi Kami Section -->
         <section id="hubungi">
             <div class="container contact-content">
-                <h2>Sedia Untuk Mengautomasi Perniagaan Anda?</h2>
-                <p>Hubungi pasukan kami hari ini untuk konsultasi percuma. Kami sedia membantu anda memilih sistem yang paling sesuai untuk perniagaan anda!</p>
-                <a href="tel:+601154156979" class="contact-number">+60 16-880 6979</a>
-                <a href="https://wa.me/601154156979?text=Hai%20Spintech%20Solution,%20saya%20ingin%20bertanya%20mengenai%20sistem%20POS%20anda." class="btn btn-whatsapp" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="vertical-align: middle; margin-right: 8px;">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg>
-                    WhatsApp Kami Sekarang
-                </a>
+                <h2>Sedia Untuk Transformasi Digital?</h2>
+                <p>Hubungi pasukan kami hari ini untuk konsultasi percuma. Mari kita pilih sistem yang paling sesuai untuk memajukan perniagaan anda!</p>
+                <a href="tel:+601154157902" class="contact-number">+60 11-5415 7902</a>
+                <div class="contact-buttons-wrapper">
+                    <a href="https://wa.me/601154157902?text=Hai%20SPINTECH,%20saya%20ingin%20bertanya%20mengenai%20sistem%20POS%20anda." class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Kami
+                    </a>
+                    <a href="https://www.facebook.com/spintechsolution" class="btn btn-facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Lawati Facebook
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -527,7 +645,11 @@
     <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 Spintech Solution. Semua Hak Cipta Terpelihara.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/spintechsolution" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/601154157902?text=Hai%20SPINTECH" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="footer-copyright">&copy; 2025 SPINTECH. Semua Hak Cipta Terpelihara.</p>
         </div>
     </footer>
 
@@ -536,12 +658,9 @@
             // Mobile Menu Toggle
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
-
             hamburger.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
-            
-            // Close mobile menu when a link is clicked
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
                     if (navLinks.classList.contains('active')) {
@@ -550,27 +669,52 @@
                 });
             });
 
-            // Fade-in animation on scroll
-            const faders = document.querySelectorAll('.fade-in');
-            const appearOptions = {
-                threshold: 0.1,
-                rootMargin: "0px 0px -50px 0px"
-            };
+            // Testimonial Slider
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const totalSlides = slides.length;
+            let slideInterval;
 
-            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-                entries.forEach(entry => {
-                    if (!entry.isIntersecting) {
-                        return;
-                    } else {
-                        entry.target.classList.add('is-visible');
-                        appearOnScroll.unobserve(entry.target);
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
                     }
                 });
-            }, appearOptions);
+            }
 
-            faders.forEach(fader => {
-                appearOnScroll.observe(fader);
-            });
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                showSlide(currentSlide);
+            }
+
+            function startSlider() {
+                slideInterval = setInterval(nextSlide, 7000); // Tukar slide setiap 7 saat
+            }
+
+            function stopSlider() {
+                clearInterval(slideInterval);
+            }
+            
+            // Expose function to window for onclick attribute
+            window.changeSlide = function(n) {
+                stopSlider(); // Hentikan auto-slide bila user klik
+                currentSlide += n;
+                if (currentSlide >= totalSlides) {
+                    currentSlide = 0;
+                }
+                if (currentSlide < 0) {
+                    currentSlide = totalSlides - 1;
+                }
+                showSlide(currentSlide);
+                startSlider(); // Mulakan semula auto-slide
+            }
+            
+            if (totalSlides > 0) {
+                showSlide(currentSlide);
+                startSlider();
+            }
         });
     </script>
 </body>
